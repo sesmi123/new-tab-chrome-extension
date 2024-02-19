@@ -1,12 +1,12 @@
 function updateDateTime() {
-  var now = new Date();
-  var hours = now.getHours().toString().padStart(2, "0");
-  var minutes = now.getMinutes().toString().padStart(2, "0");
-  var seconds = now.getSeconds().toString().padStart(2, "0");
-  var currentTimeString = hours + ":" + minutes + ":" + seconds;
+  let now = new Date();
+  let hours = now.getHours().toString().padStart(2, "0");
+  let minutes = now.getMinutes().toString().padStart(2, "0");
+  let seconds = now.getSeconds().toString().padStart(2, "0");
+  let currentTimeString = hours + ":" + minutes + ":" + seconds;
   document.getElementById("current-time").textContent = currentTimeString;
 
-  var days = [
+  let days = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -15,7 +15,7 @@ function updateDateTime() {
     "Friday",
     "Saturday",
   ];
-  var months = [
+  let months = [
     "January",
     "February",
     "March",
@@ -29,11 +29,11 @@ function updateDateTime() {
     "November",
     "December",
   ];
-  var currentDay = days[now.getDay()];
-  var currentDate = now.getDate();
-  var currentMonth = months[now.getMonth()];
-  var currentYear = now.getFullYear();
-  var dateString =
+  let currentDay = days[now.getDay()];
+  let currentDate = now.getDate();
+  let currentMonth = months[now.getMonth()];
+  let currentYear = now.getFullYear();
+  let dateString =
     currentDay + ", " + currentMonth + " " + currentDate + ", " + currentYear;
   document.getElementById("current-date").textContent = dateString;
 }

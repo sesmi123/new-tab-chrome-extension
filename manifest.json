@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Coding Challenges New Tab",
+  "version": "1.0",
+  "author": "Sesmi Athiyarath",
+  "description": "Sets background color to Coding Challenges Blue and displays text in the center.",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

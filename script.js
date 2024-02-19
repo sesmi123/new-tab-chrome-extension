@@ -38,8 +38,23 @@ function updateDateTime() {
   document.getElementById("current-date").textContent = dateString;
 }
 
+function fetchWeather() {
+  // TODO: Fetch real-time weather data from free weather APIs
+  const weatherDescription = "Partly Cloudy";
+  const temperature = "27";
+  const cityName = "Neonopolis";
+  document.getElementById(
+    "city-info"
+  ).innerHTML = cityName;
+  document.getElementById(
+    "weather-info"
+  ).innerHTML = `${weatherDescription}, ${temperature}&deg;C`;
+}
+
 // Update time every second
 setInterval(updateDateTime, 1000);
 
 // Initial call to display time immediately
 updateDateTime();
+
+fetchWeather();

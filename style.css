@@ -1,5 +1,5 @@
 body {
-    background-color: #04295B;
+    background-color: black;
     color: white;
     margin: 0;
     font-family: Segoe UI, Helvetica, Arial, sans-serif;
@@ -22,11 +22,15 @@ body {
     font-weight: bold;
 }
 
+.weather-info {
+    font-size: 26px;
+}
+
 .date {
     font-size: 26px;
 }
 
 .time {
+    font-size: 96px;
     margin-top: 10px;
-    font-size: 76px;
 }

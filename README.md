@@ -1,4 +1,4 @@
-# coding-challenges-chrome-extension
+# new-tab-chrome-extension
 A Chrome extension that will customize the look and functionality of each new tab you open in Chrome.
 
 ![Customized tab](./screenshot.PNG)
